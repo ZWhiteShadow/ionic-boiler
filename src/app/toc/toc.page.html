@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Pet Facts: 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list *ngFor="let chapter of chapters">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="{{chapter.pic}}">
+      </ion-thumbnail>
+      <a href="{{chapter.url}}">{{chapter.title}}</a>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
